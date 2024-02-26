@@ -1,19 +1,30 @@
+<!-- The user should be able to guess a number until they guess the right number.
+The user should be able to input a number and click a button to submit the number.
+The webpage should inform the user to guess a higher number, guess a lower number, or tell the user they guessed the correct number.
+The webpage should list all guessed numbers the user guessed during the session. -->
+
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
     <title>TITLE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Your link to your CSS file -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles.css">
     <!-- Your Javascript file goes here -->
-    <script src="" async defer></script>
+    <script src="app.js" async defer></script>
   </head>
   <body>
     <!-- your HTML should go here -->
     <nav>
       <h1>Let's Play the Guessing Number Game!</h1>
     </nav>
-
+    <form>
+      <label for="user-input">Guess what number the almighty computer is thinking of (1-100): </label>
+      <input name='user-input' id='user-input' type="number">
+      <button id="guessButton">guess</button>
+    </form>
+    <ul id="oldGuessList">Your old guesses:</ul>
+    <p id="output"></p>
 
   </body>
 </html>
