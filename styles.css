@@ -3,9 +3,64 @@ body {
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
   text-align: center;
+  background-image: url("https://i.imgflip.com/m36dg.jpg?a474408");
+  background-size: cover;
+  color: aliceblue;
 }
 
 h1 {
-  font-weight: 400
+  font-weight: 400;
 }
 
+.guessContainer {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.guesslist {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.joker {
+  background-image: url("https://64.media.tumblr.com/7cdfd9d6337752e1e53ca3ff7290280a/b4064f5b34e3cbb7-b1/s540x810/bbd70d4fdcb50e2217e0796ee129756d8f5b005c.gifv");
+  /* background-image: url("https://images.indianexpress.com/2018/03/the-joker-759.jpg"); */
+  border-radius: 30px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 30vw;
+  margin-left: 35vw;
+  animation: pop-out 1.2s ease-out;
+}
+ 
+.punch {
+background-image: url("https://media1.tenor.com/m/v7ulH12kWuwAAAAC/batman-joker.gif");
+border-radius: 30px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 30vw;
+  margin-left: 35vw;
+  animation: spin 1.2s ease-out;
+}
+/* add spinning to joker img */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* popping out animation */
+@keyframes pop-out {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(2.0); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 1; }
+}

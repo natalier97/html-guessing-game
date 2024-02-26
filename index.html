@@ -6,7 +6,7 @@ The webpage should list all guessed numbers the user guessed during the session.
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <title>TITLE</title>
+    <title>guessing game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Your link to your CSS file -->
     <link rel="stylesheet" href="styles.css">
@@ -16,15 +16,21 @@ The webpage should list all guessed numbers the user guessed during the session.
   <body>
     <!-- your HTML should go here -->
     <nav>
-      <h1>Let's Play the Guessing Number Game!</h1>
+      <h1>Help Batman Defeat the Joker!</h1>
     </nav>
     <form>
-      <label for="user-input">Guess what number the almighty computer is thinking of (1-100): </label>
+      <label for="user-input">Guess the right number to deliver high quality punches: </label>
       <input name='user-input' id='user-input' type="number">
       <button id="guessButton">guess</button>
     </form>
-    <ul id="oldGuessList">Your old guesses:</ul>
+    <br/>
+    <div class="guessContainer">
+    <ul id="oldGuessList">Bad guesses:</ul> <br/> 
+    <br/> 
+    <div class="picture">
+    </div>
     <p id="output"></p>
+    </div>
 
   </body>
 </html>
