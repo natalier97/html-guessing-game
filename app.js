@@ -26,10 +26,7 @@ function guess(event) {
     picture.classList.add("punch");
     oldGuessList.textContent = "You guessed right!";
     output.textContent = "";
-    
-  } 
-  
-  else if (userInput < randomNumber) {
+  } else if (userInput < randomNumber) {
     picture.classList.add("joker"); //adding joker class name to add picture
     oldGuesses.textContent = userInput; //adding value to list item w/ the user input
     output.textContent = "You guessed too low!, guess again";
@@ -37,9 +34,12 @@ function guess(event) {
 
     //letting input box be empty again
     document.getElementById("user-input").value = "";
-  } 
-  
-  else {
+    setTimeout(() => {
+      picture.classList.remove("joker");
+    }, 1500);
+
+
+  } else {
     picture.classList.add("joker"); //adding joker class name to add picture
 
     oldGuesses.textContent = userInput; //adding value to list item w/ the user input
